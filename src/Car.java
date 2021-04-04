@@ -5,6 +5,15 @@ public class Car {
   String Color;
   String Owner;
 
+  Car next;
+
+  public Car getNext() {
+    return next;
+  }
+  public void setNext(Car next) {
+    this.next = next;
+  }
+
   public String getColor() {
     return Color;
   }

@@ -8,7 +8,8 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < 2; i++) {
             String plate = scanner.next();
-            String owner = scanner.next();
+            String ownerLastName = scanner.next();
+            String ownerFirstname = scanner.next();
             String model = scanner.next();
             String year = scanner.next();
 
@@ -18,7 +19,7 @@ public class App {
             smallCar.setPlateNumber(plate);
             smallCar.setModel(model);
             smallCar.setYearModel(year);
-            smallCar.setOwner(owner);
+            smallCar.setOwner(ownerFirstname + " " + ownerLastName);
             msuCarRegistry.register(smallCar);
         }
         scanner.close();
